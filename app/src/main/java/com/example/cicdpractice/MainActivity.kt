@@ -63,3 +63,11 @@ fun GreetingPreview() {
         Greeting("Android")
     }
 }
+
+@Preview(showBackground = true)
+@Composable
+fun MySecond() {
+    CiCDPracticeTheme {
+        Greeting("Android")
+    }
+}
