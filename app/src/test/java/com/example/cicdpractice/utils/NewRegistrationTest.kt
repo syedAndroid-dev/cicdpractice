@@ -45,4 +45,14 @@ class NewRegistrationTest{
         )
         assertThat(result).isFalse()
     }
+
+    @Test
+    fun `password less than 2 digits return false`(){
+        val result = NewRegistration.validateUserNameAndPassword(
+            userName = "test",
+            password = "1",
+            confirmPassword = "1"
+        )
+        assertThat(result).isFalse()
+    }
 }
